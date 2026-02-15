@@ -2,23 +2,23 @@ class Clarity < Formula
   desc "CLI for Clarity Engine — think with AI agent teams"
   homepage "https://github.com/PrerakGada/clarity_engine"
   license "MIT"
-  version "0.1.0-alpha.5"
+  version "0.1.0-alpha.6"
 
   on_macos do
     on_arm do
-      url "https://github.com/PrerakGada/clarity_engine/releases/download/cli-v0.1.0-alpha.5/clarity-0.1.0-alpha.5-darwin-arm64.tar.gz"
-      sha256 "a11c07a384c06b4068f2f89ccc82cf61ff222bcda081d54b78cbb2bada9bb36b"
+      url "https://github.com/PrerakGada/clarity_engine/releases/download/cli-v0.1.0-alpha.6/clarity-0.1.0-alpha.6-darwin-arm64.tar.gz"
+      sha256 "3296ee40dbfc335336b1bc11f973b39fc2877eac099a2a914b0ac1705c576f96"
     end
     on_intel do
-      url "https://github.com/PrerakGada/clarity_engine/releases/download/cli-v0.1.0-alpha.5/clarity-0.1.0-alpha.5-darwin-x64.tar.gz"
-      sha256 "ec8781e3d63269d53ded10924f95fa949d03ee107e90865cc98019bbb02eff24"
+      url "https://github.com/PrerakGada/clarity_engine/releases/download/cli-v0.1.0-alpha.6/clarity-0.1.0-alpha.6-darwin-x64.tar.gz"
+      sha256 "0275ab01b00db0c8ef915e6ff5a230cbaf5cb35518b5aaff012243353204ad1d"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/PrerakGada/clarity_engine/releases/download/cli-v0.1.0-alpha.5/clarity-0.1.0-alpha.5-linux-x64.tar.gz"
-      sha256 "ab99904ff41513ba03a88a25e31965d30a470e2bbd8a52c0d60694f8a20866e9"
+      url "https://github.com/PrerakGada/clarity_engine/releases/download/cli-v0.1.0-alpha.6/clarity-0.1.0-alpha.6-linux-x64.tar.gz"
+      sha256 "30966ce8248144e43e8b7bc264ca21d8cdc383ebbc05200721e5245cf0a56bf8"
     end
   end
 
@@ -28,6 +28,6 @@ class Clarity < Formula
   end
 
   test do
-    assert_match "0.1.0-alpha.5", shell_output("#{bin}/clarity --version")
+    assert_match "0.1.0-alpha.6", shell_output("#{bin}/clarity --version")
   end
 end
