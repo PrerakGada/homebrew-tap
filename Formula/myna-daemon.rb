@@ -16,6 +16,10 @@ class MynaDaemon < Formula
   head "https://github.com/PrerakGada/myna.git", branch: "main"
 
   depends_on "python@3.13"
+  # Rust toolchain is needed to build pydantic_core and watchfiles from source
+  # (Homebrew installs PyPI resources via --no-binary :all:, so even pure-Python
+  # wheels are rebuilt from sdist; Rust extensions can't bootstrap without it).
+  depends_on "rust" => :build
 
   # The daemon needs an mlx-audio Kokoro engine on :8765. That engine is too
   # heavy to bundle via brew (multi-GB model weights, Apple-Silicon-only). We
