@@ -24,9 +24,13 @@ class MynaDaemon < Formula
 
   def install
     # The repo is laid out as a monorepo; daemon/ holds the Python package.
-    cd "daemon" do
-      virtualenv_install_with_resources
-    end
+    # NOTE: virtualenv_install_with_resources is hard-coded to use `buildpath`
+    # (the extraction root), so a surrounding `cd "daemon"` is dead code —
+    # pip would still see the root, error with "Neither setup.py nor
+    # pyproject.toml found", and the install would bomb. Drop down to the
+    # explicit-path API: create the venv, pip_install_and_link the subdir.
+    venv = virtualenv_create(libexec, "python3.13")
+    venv.pip_install_and_link buildpath/"daemon"
 
     # Convenience symlink so users can run `myna-daemon` (matches the LaunchAgent).
     (bin/"myna-daemon").write <<~SH
