@@ -11,7 +11,7 @@ class MynaDaemon < Formula
   # release.yml does NOT bump this formula on every release — it bumps the cask
   # only. Daemon updates ride the cask's homepage release; bump this manually
   # when daemon code changes meaningfully.
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "0a8795d741efc5ff5c426e2022245e92723863d33003d7f4476ad3579c08a3f5"
   license "MIT"
   head "https://github.com/PrerakGada/myna.git", branch: "main"
 
