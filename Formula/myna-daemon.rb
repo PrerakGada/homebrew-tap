@@ -7,11 +7,11 @@ class MynaDaemon < Formula
 
   desc "Myna's Python HTTP daemon (chunking, extract, summarize, /synthesize)"
   homepage "https://github.com/PrerakGada/myna"
-  url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.1.tar.gz"
+  url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.2.tar.gz"
   # release.yml does NOT bump this formula on every release — it bumps the cask
   # only. Daemon updates ride the cask's homepage release; bump this manually
   # when daemon code changes meaningfully.
-  sha256 "941763c95e9613b9d6fac01d6e53a12f278399bc0708e29cbcc93aa2cb8b48a5"
+  sha256 "14720199de3ff089a8fa94b23ae6f5f4cea1c7f5f5f9bee42fb13711471d9df3"
   license "MIT"
   head "https://github.com/PrerakGada/myna.git", branch: "main"
   bottle do
