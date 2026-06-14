@@ -15,8 +15,8 @@ class MynaDaemon < Formula
   license "MIT"
   head "https://github.com/PrerakGada/myna.git", branch: "main"
   bottle do
-    root_url "https://github.com/PrerakGada/Myna/releases/download/v0.3.1"
-    sha256 cellar: :any, arm64_sequoia: "9791c3d2d606892a85ac999fdf930fe8e1d2dbdfd8ce14bef80da67327b0d4da"
+    root_url "https://github.com/PrerakGada/Myna/releases/download/v0.3.2"
+    sha256 cellar: :any, arm64_sequoia: "737dae924202c221e3b1bd3adc60a19aaee9ac7bbf7b0b40df7f0eac89ecb636"
   end
 
   depends_on "python@3.13"
