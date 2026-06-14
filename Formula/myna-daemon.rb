@@ -7,11 +7,11 @@ class MynaDaemon < Formula
 
   desc "Myna's Python HTTP daemon (chunking, extract, summarize, /synthesize)"
   homepage "https://github.com/PrerakGada/myna"
-  url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
+  url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
   # release.yml does NOT bump this formula on every release — it bumps the cask
   # only. Daemon updates ride the cask's homepage release; bump this manually
   # when daemon code changes meaningfully.
-  sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+  sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   license "MIT"
   head "https://github.com/PrerakGada/myna.git", branch: "main"
 
@@ -27,203 +27,203 @@ class MynaDaemon < Formula
   # dependency.
 
   resource "annotated-doc" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "annotated-types" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "anyio" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "babel" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "certifi" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "charset-normalizer" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "click" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "courlan" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "dateparser" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "fastapi" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "h11" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "htmldate" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "httpcore" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "httptools" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "httpx" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "idna" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "Jinja2" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "jusText" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "lxml" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "lxml_html_clean" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "MarkupSafe" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "pydantic" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "pydantic_core" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "python-dateutil" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "python-dotenv" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "pytz" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "PyYAML" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "regex" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "six" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "starlette" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "tld" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "trafilatura" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "typing-inspection" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "typing_extensions" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "tzlocal" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "urllib3" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "uvicorn" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "uvloop" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "watchfiles" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
   resource "websockets" do
-    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.2.1.tar.gz"
-    sha256 "b7a88170ffbed6aa907283e1603eb6187b556250a27097f88797e7398518d6bb"
+    url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "36da2ec0189822d4ad18c6a3bc1aa4e2850e852595a63fe31dece0fdeacd1238"
   end
 
 
