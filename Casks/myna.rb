@@ -15,7 +15,7 @@ cask "myna" do
   # ask for them, but unattended `brew upgrade` won't replace the .app while
   # Sparkle is mid-download.
   auto_updates true
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
   depends_on formula: "myna-daemon"
 
   app "Myna.app"
