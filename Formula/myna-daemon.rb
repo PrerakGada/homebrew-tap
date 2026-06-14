@@ -7,17 +7,13 @@ class MynaDaemon < Formula
 
   desc "Myna's Python HTTP daemon (chunking, extract, summarize, /synthesize)"
   homepage "https://github.com/PrerakGada/myna"
-  url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.2.tar.gz"
+  url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.3.3.tar.gz"
   # release.yml does NOT bump this formula on every release — it bumps the cask
   # only. Daemon updates ride the cask's homepage release; bump this manually
   # when daemon code changes meaningfully.
-  sha256 "14720199de3ff089a8fa94b23ae6f5f4cea1c7f5f5f9bee42fb13711471d9df3"
+  sha256 "ea047445385afb4366ddf419a25e2cad0d23c41b4ca9b331edc240feea6cb9d1"
   license "MIT"
   head "https://github.com/PrerakGada/myna.git", branch: "main"
-  bottle do
-    root_url "https://github.com/PrerakGada/Myna/releases/download/v0.3.2"
-    sha256 cellar: :any, arm64_sequoia: "737dae924202c221e3b1bd3adc60a19aaee9ac7bbf7b0b40df7f0eac89ecb636"
-  end
 
   depends_on "python@3.13"
   # Rust toolchain is needed to build pydantic_core and watchfiles from source
@@ -253,6 +249,16 @@ class MynaDaemon < Formula
       exec "#{libexec}/bin/python" -m myna "$@"
     SH
     chmod 0755, bin/"myna-daemon"
+
+    # The `myna` CLI: `myna setup` finishes the install (voice engine + model +
+    # Claude hook), `myna doctor` health-checks, and `myna "text"` speaks. Ship
+    # the script plus the files its subcommands resolve relatively (dist/setup.sh
+    # and the hook) so it works from libexec, then symlink it onto PATH.
+    (libexec/"cli").install buildpath/"cli/myna"
+    (libexec/"dist").install buildpath/"dist/setup.sh"
+    (libexec/"hooks").install buildpath/"hooks/myna-cc-announce.py"
+    chmod 0755, libexec/"cli/myna"
+    bin.install_symlink libexec/"cli/myna" => "myna"
 
     # Default config (only written if not present — install logic mirrors install.sh).
     (etc/"myna").mkpath
