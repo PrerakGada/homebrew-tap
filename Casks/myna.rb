@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 cask "myna" do
-  version "0.4.2"
-  sha256 "9efeb9acd5757a828e1f99fd1255a546be51730999fafe191abe6accd6fffd93" # release.yml rewrites this with the real DMG sha256
+  version "0.4.3"
+  sha256 "0d856d9ae8f0a41443d5af25af9c7aec7650f5d18e78e4843bfc95de61d9c327" # release.yml rewrites this with the real DMG sha256
 
   url "https://github.com/PrerakGada/myna/releases/download/v#{version}/Myna-#{version}.dmg",
       verified: "github.com/PrerakGada/myna/"
