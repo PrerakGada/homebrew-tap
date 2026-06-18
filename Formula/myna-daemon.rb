@@ -7,17 +7,13 @@ class MynaDaemon < Formula
 
   desc "Myna's Python HTTP daemon (chunking, extract, summarize, /synthesize)"
   homepage "https://github.com/PrerakGada/myna"
-  url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.4.3.tar.gz"
+  url "https://github.com/PrerakGada/Myna/archive/refs/tags/v0.4.4.tar.gz"
   # release.yml does NOT bump this formula on every release — it bumps the cask
   # only. Daemon updates ride the cask's homepage release; bump this manually
   # when daemon code changes meaningfully.
-  sha256 "942d6eeff8b17ed7f5fe00e36f54ef7d5e8eefd465ea856d6d4c9118ea357a21"
+  sha256 "d5eb3e19e688d16147124fffb379beea062190afc674195309e8b49400b71e4b"
   license "MIT"
   head "https://github.com/PrerakGada/myna.git", branch: "main"
-  bottle do
-    root_url "https://github.com/PrerakGada/Myna/releases/download/v0.4.3"
-    sha256 cellar: :any, arm64_sequoia: "4a15f383fe230fe3a69e8297f94605fda434b1a0a83af523d65a9a6ba4256d08"
-  end
 
   depends_on "python@3.13"
   # Rust toolchain is needed to build pydantic_core and watchfiles from source
