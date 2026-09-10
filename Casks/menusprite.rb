@@ -9,6 +9,13 @@ cask "menusprite" do
   desc "Customizable menu bar system monitor"
   homepage "https://github.com/PrerakGada/menusprite-releases"
 
+  livecheck do
+    url "https://raw.githubusercontent.com/PrerakGada/menusprite-releases/main/version.json"
+    strategy :json do |json|
+      json["homebrew_version"]
+    end
+  end
+
   depends_on arch: :arm64
   depends_on macos: :tahoe
 
