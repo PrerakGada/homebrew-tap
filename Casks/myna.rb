@@ -4,8 +4,9 @@ cask "myna" do
   version "0.5.1"
   sha256 "1bd72a2c522c9df6f672b98abfcd6d8b1611b4ca3dfe0ef12af70c035afc5a1b" # release.yml rewrites this with the real DMG sha256
 
-  url "https://github.com/PrerakGada/myna/releases/download/v#{version}/Myna-#{version}.dmg",
-      verified: "github.com/PrerakGada/myna/"
+  # No `verified:` — Homebrew 7 deprecates it and warns on every install; the
+  # url already sits under the homepage, which is all the default check needs.
+  url "https://github.com/PrerakGada/myna/releases/download/v#{version}/Myna-#{version}.dmg"
   name "Myna"
   desc "Always-on local TTS companion"
   homepage "https://github.com/PrerakGada/myna"
