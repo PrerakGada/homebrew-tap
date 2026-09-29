@@ -16,7 +16,7 @@ cask "myna" do
   # ask for them, but unattended `brew upgrade` won't replace the .app while
   # Sparkle is mid-download.
   auto_updates true
-  depends_on macos: :ventura
+  depends_on macos: :sonoma # the voice engine needs macOS 14; setup.sh refuses older
   depends_on formula: "myna-daemon"
 
   app "Myna.app"
