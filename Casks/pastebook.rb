@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 cask "pastebook" do
-  version "0.1.0"
-  sha256 "85f73e7073ef1755b606038e559547dbb02c1a7fc27a94358147f8ff40ddd1be"
+  version "0.1.1"
+  sha256 "8a485ae20a8b02446b6338249785fbdcb3d1ee1dc06233dc5941afd59611a06a"
 
   url "https://github.com/PrerakGada/pastebook-releases/releases/download/v#{version}/Pastebook-#{version}.zip"
   name "Pastebook"
