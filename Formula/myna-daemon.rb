@@ -14,6 +14,10 @@ class MynaDaemon < Formula
   sha256 "e20d2948f69f9c5895dd2bef1694256598c2c177e301a7b2da0a9818a7276618"
   license "MIT"
   head "https://github.com/PrerakGada/myna.git", branch: "main"
+  bottle do
+    root_url "https://github.com/PrerakGada/Myna/releases/download/v0.5.2"
+    sha256 cellar: :any, arm64_sequoia: "4730c74d90139fd86a0c2705cf6ad4ea749ba59a6f3e7827b93bc7926083e95b"
+  end
 
   depends_on "python@3.13"
   # Rust toolchain is needed to build pydantic_core and watchfiles from source
