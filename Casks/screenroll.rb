@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 cask "screenroll" do
-  version "0.1.2"
-  sha256 "791be1b96db337edbb66c746400c18e5450c1d8ba40c58e06f5d1a50dce6e010"
+  version "0.1.3"
+  sha256 "7e8651e87946a961fdb44e99378217405b9668130031984f8be3549795e21082"
 
   url "https://github.com/PrerakGada/screenroll-releases/releases/download/v#{version}/Screenroll-#{version}.zip"
   name "Screenroll"
