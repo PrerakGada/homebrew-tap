@@ -6,7 +6,7 @@ cask "macsweep" do
 
   url "https://github.com/PrerakGada/macsweep-releases/releases/download/v#{version}/MacSweep-#{version}.zip"
   name "MacSweep"
-  desc "Cleanup, storage map and security checks for your Mac"
+  desc "Cleanup, storage map and security checks"
   homepage "https://macsweep.prerakgada.in/"
 
   # The alpha ships as a GitHub pre-release, which :github_latest skips; read the manifest the releases repository
