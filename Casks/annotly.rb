@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 cask "annotly" do
-  version "0.1.0"
-  sha256 "6c98dd7b652ecf38b5e9988887dc5fba85b64bc82df834a8644ae80ebe11320f"
+  version "0.1.1"
+  sha256 "bad5f5233dde7ef6cedef05a97ced2b6589061df799b717a5c46bb75c2df6adb"
 
   url "https://github.com/PrerakGada/annotly-releases/releases/download/v#{version}/Annotly-#{version}.zip"
   name "Annotly"
