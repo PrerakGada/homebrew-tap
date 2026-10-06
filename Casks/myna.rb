@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 cask "myna" do
-  version "0.5.2"
-  sha256 "3a0439b503004ac216b30a613f4e7a9fadfc79c53eeeab82747283caf57f3ac8" # release.yml rewrites this with the real DMG sha256
+  version "0.6.0"
+  sha256 "0b2bd6ead9d90eee05fb386adcae77fcd898ece9d2bdc5fe0ba282c2ab12f7c1" # release.yml rewrites this with the real DMG sha256
 
   # No `verified:` — Homebrew 7 deprecates it and warns on every install; the
   # url already sits under the homepage, which is all the default check needs.
