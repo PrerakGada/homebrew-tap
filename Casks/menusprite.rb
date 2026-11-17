@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 cask "menusprite" do
-  version "0.5.9,20"
-  sha256 "b5fe332437c3c493282a6e816eab643af76a4c47a1ad9407f7fe67a9c7062985"
+  version "0.6.0,21"
+  sha256 "4f8b359e9589b4c007b3917eeece0f17d9c8fb6cd7a5bee8537117c4231ceced"
 
   url "https://github.com/PrerakGada/menusprite-releases/releases/download/v#{version.csv.first}-preview.1/MenuSprite-#{version.csv.first}-preview.1-arm64.zip"
   name "MenuSprite"
